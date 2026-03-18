@@ -1,3 +1,5 @@
+from ai_model import InfusionAIPredictor
+ai = InfusionAIPredictor()
 from flask import Flask, render_template_string
 import random
 import sqlite3
@@ -227,8 +229,8 @@ def home():
         rows = c.fetchall()
         history = [r[0] for r in rows][::-1]
 
-        prediction = predict(history)
-        time_left = estimate_time_to_empty(history)
+        prediction = ai.predict_future_level(history)
+        time_left = ai.estimate_time_to_empty(history)
 
         result[d] = {
             "level": value,
