@@ -92,6 +92,9 @@ Simulation + Hardware Integrated System
 * Mobile application integration
 * Cloud data storage
 * Advanced machine learning models
+## Circuit Diagram
+
+![Circuit Diagram](circuit_diagram.png)
 
 ---
 
