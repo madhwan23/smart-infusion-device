@@ -15,3 +15,7 @@ This project automates IV bottle replacement using:
 1. Upload code to Arduino
 2. Connect sensor and servo
 3. System runs automatically
+## Hardware Code
+The Arduino code (arduino_code.ino) controls:
+- Servo motor for bottle switching
+- Sensor input for liquid level detection
