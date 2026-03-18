@@ -1,0 +1,12 @@
+digraph {
+	rankdir=LR size="8,5"
+	A [label="Arduino UNO"]
+	S [label="Servo Motor"]
+	L [label="Level Sensor"]
+	A -> S [label="5V"]
+	A -> L [label="5V"]
+	A -> S [label=GND]
+	A -> L [label=GND]
+	A -> S [label="Pin 9 (PWM)"]
+	L -> A [label="Pin 2 (Input)"]
+}

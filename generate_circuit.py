@@ -22,6 +22,6 @@ dot.edge('A', 'S', label='Pin 9 (PWM)')
 dot.edge('L', 'A', label='Pin 2 (Input)')
 
 # Save diagram
-dot.render('circuit_diagram', view=True)
+dot.render('circuit_diagram', view=False)
 
 print("✅ Circuit diagram generated as circuit_diagram.png")
